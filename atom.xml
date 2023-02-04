@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title></title>
+	<link href="https://funkincrew.github.io/funkBlog/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://funkincrew.github.io/funkBlog/"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-02-03T00:00:00+00:00</updated>
+	<id>https://funkincrew.github.io/funkBlog/atom.xml</id>
+	<entry xml:lang="en">
+		<title>WEEK OF 2023&#x2F;01&#x2F;27: IN FUNKIN&#x27; WE TRUST</title>
+		<published>2023-02-03T00:00:00+00:00</published>
+		<updated>2023-02-03T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://funkincrew.github.io/funkBlog/blog/2023-02-03/" type="text/html"/>
+		<id>https://funkincrew.github.io/funkBlog/blog/2023-02-03/</id>
+		<content type="html">&lt;p&gt;HELLO everyone, this is our THIRD WEEK of funkin blog posts!!!&lt;&#x2F;p&gt;
+&lt;p&gt;Got a small little handful of blogs here... one particularly about... kickstarter backend stuff! thats right, new authors here! yaaahoooooooooo!!!&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;This is still not a fully automated process lol.... I should get on that sometime this weekend maybe. Usually on the weekends I spend time with my girlfriend, but she got damn sick! So can&#x27;t see her this weekend, so it&#x27;s lookin like a weekend of coding! Hopefully a bit more progress on website stuff heheh. Might even get the domain moved to funkin.me finally lol&lt;&#x2F;p&gt;
+&lt;p&gt;ANYWAYS here&#x27;s this weeks blog posts!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;week-7-source-code-released&quot;&gt;Week 7 source code RELEASED&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;by ninjamuffin99&lt;&#x2F;em&gt; &lt;&#x2F;p&gt;
+&lt;p&gt;YEP it&#x27;s been a long time coming... I know!! A lotta apologies!!! But in my defense.... what other games promise to even GIVE you source code!! Listen cut us some damn slack with it!&lt;&#x2F;p&gt;
+&lt;p&gt;ANYWAYS yeah I finally tossed up the ol week 7 source code up onto the main &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;FunkinCrew&#x2F;Funkin&quot;&gt;Friday Night Funkin&#x27; github repo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Why now? Well partly I feel like it&#x27;s been long enough, partly I figured that people would be happy ENOUGH with JUST the barebones of week 7 code. We wanted it to work on desktop, we wanted certain things fixed, we wanted to just wait until next update was done and out, the list goes on. ALL of that code was really written in a different era. Our LIVES were completely different just a little under two years ago. We had our full and undivided focus and LIFE behind the game at the time, and nowadays we still pretty much do. But it really was a different era of staying up until 7AM programming, and then waking up to program all day until the late hours. We had the Kickstarter on our minds, which despite our wacky little stretch goals, we had NO IDEA what the reception of the Kickstarter would be. Would we barely scrape by and get to our goal? Would we smash past it? How far past it would we smash? As the story goes, we raised over 2 million dollars! We had to really take shit seriously and focus on things OTHER than main game work. We had to focus not only on our OWN LIVES and workflows, but taking care of the game as a LEGIT JOB and all that. Doing all the paperwork to become a company, file the proper taxes, get proper bank accounts, payroll, employees, contracts, THAT list is one that really goes on lol. &lt;&#x2F;p&gt;
+&lt;p&gt;One thing about the week 7 build is that the cutscenes are implemented... STRANGELY lol&lt;&#x2F;p&gt;
+&lt;p&gt;Originally the week 7 cutscenes were implemented in the same way that many of the other in-game animations are implemented, with spritesheet animation. But eventually, the animations sorta out grew the capacity of HaxeFlixel&#x27;s texture size limits, and we had to split it up a certain way. THEN we ran into memory issues where the game would stutter and lag on load, and it would desync the audio for the animations! I tried a few different solutions, but in the timeframe we had (a lot of the work was done through March 2021... a single damn month!) I just ended up doing it naive way, and then just screen recording that, and then just doing a Newgrounds only build! We had always intended week 7 to be Newgrounds exclusive temporarily, although apologies it has lasted this long bwah!&lt;&#x2F;p&gt;
+&lt;p&gt;At this point in time I feel like most lil FNF offshoots and whatnot have surpassed the work I put into week 7, figuring that most of these offshoots already have had multiple times the amount of development time as the whole game at that point had!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;kickstarter-backend-stuff-missing-surveys-check-the-end-of-the-post&quot;&gt;Kickstarter (Backend) Stuff! Missing Surveys check the end of the post&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;by Shamwayne&lt;&#x2F;em&gt; &lt;&#x2F;p&gt;
+&lt;p&gt;Sup everyone! I&#x27;m Shingi, the constantly sleep deprived and all round dumbass gremlin working on the Kickstarter Backend stuff (sorry to everyone who didn&#x27;t get the gig lol).&lt;&#x2F;p&gt;
+&lt;p&gt;What&#x27;s this &amp;quot;Kickstarter Backend&amp;quot; thingy you ask? Well...it&#x27;s basically going to be a portal where all the Backers can manage their profiles, view their rewards (and potentially track their shipment&#x2F;delivery progress, still working on that one) as well as answer surveys and get updates on everything FNF! Well that&#x27;s the overall idea - just think of most of the problems with the current Kickstarter setup and the new Portal will probably have a fix for it. &lt;&#x2F;p&gt;
+&lt;p&gt;Huh, i was supposed to add a small section about why this new backend portal instead of just working with KS but i kinda answered that already. Welp, that leaves me with no choice but to give you spoilers for upcoming content! Wahoo!&lt;&#x2F;p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Spoilers for upcoming Update!&lt;&#x2F;summary&gt;
+  &lt;pre&gt;[REDACTED]&lt;&#x2F;pre&gt;
+&lt;p&gt;Umm....nevermind! Just had a nice chat with a friendly FNF Ninja(muffin)s and they told me to keep quiet for now.&lt;&#x2F;p&gt;
+&lt;&#x2F;details&gt;
+&lt;p&gt;That&#x27;s about it for me, I do occasionally check the Kickstarter for ideas and things to improve on so if you have ideas and suggestions feel free to post there. Also &lt;strong&gt;holy crap it&#x27;s been 6 months since the last Kickstarter Update??! WTF&lt;&#x2F;strong&gt; (I know you&#x27;re reading this Cam, go finish writing the KS update right now lol).&lt;&#x2F;p&gt;
+&lt;p&gt;One more thing: The Ninjas might have stopped me now, but who knows what easter eggs i&#x27;ll plant in the Portal when it&#x27;s done ;-)&lt;&#x2F;p&gt;
+&lt;p&gt;One other thing: shout out to &lt;strong&gt;NamelessEntity&lt;&#x2F;strong&gt;, &lt;strong&gt;DanTheMan_1234&lt;&#x2F;strong&gt;, &lt;strong&gt;Braxton&lt;&#x2F;strong&gt;, &lt;strong&gt;Redberd36&lt;&#x2F;strong&gt; on the KS page - whenever i visit KS i see you peeps active on the page. I have more i wanna say but this post is is too long already for my liking but i just wanna say all the Backers are valid and your feedback is seen, don&#x27;t worry. speaking of Backer feedback...&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;one-last-thing-important&quot;&gt;One last thing (important)&lt;&#x2F;h3&gt;
+&lt;p&gt;If you haven&#x27;t received a Survey for something, and &lt;strong&gt;You&#x27;ve seen everyone else with a similar Reward Tier get their stuff&lt;&#x2F;strong&gt;  comment on the KS with &lt;em&gt;RE: Missing Survey&lt;&#x2F;em&gt; and your username (if it&#x27;s different from the one on the KS page). No promises it will be fixed anytime soon (probably until the Portal is done which will have the ability to fix it built-in) but this is more of a check to see if there&#x27;s a problem and how severe it is.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;eric-s-lil-update&quot;&gt;Eric&#x27;s lil update&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;by EliteMasterEric&lt;&#x2F;em&gt; &lt;&#x2F;p&gt;
+&lt;p&gt;Hello every-nya it&#x27;s me Eric!!!!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;4635334&#x2F;216710283-20753afd-dcf7-40ab-8bbd-614b51a43ce6.jpg&quot; alt=&quot;hello-everynya&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Uhhhhh I&#x27;m still working on that input survey here&#x27;s a preview of what it looks like&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;4635334&#x2F;216709589-a94238f5-3393-4b09-856a-8c3baac86bcb.png&quot; alt=&quot;image&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Yes one of the input systems in the survey IS copied from the October 2020 codebase and yes it DOES feel awful you need to know what&#x27;s bad in order to know what&#x27;s good&lt;&#x2F;p&gt;
+&lt;p&gt;Work on this stuff might get pushed off a bit while i work on some other stuff so please be patient lol&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;funkin-resources-x-funkin-me-blog&quot;&gt;funkin-resources x funkin.me blog&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;by ninjamuffin99&lt;&#x2F;em&gt; &lt;&#x2F;p&gt;
+&lt;p&gt;I try to slowly advance the funkin blog website, eventually we will have it be our MAIN WEBSITE for the game, our company, blog, etc !!! I want it to be good website! Ever since we released FNF on Newgrounds 2 years ago, I have wanted to be the person that created the Funkin website... because I really want to polish my web design knowhow! I&#x27;m a punk ass bitch like that! But also it helps that it is very fun and refreshing to work on a project like this (the website that is, although FNF is very nice to work on!)&lt;&#x2F;p&gt;
+&lt;p&gt;ANYWAYS this week&#x27;s nice little change is a nicer INTEGRATION of sorts with our little funkin-resources github list! As mentioned previously in the blog, it&#x27;s a nice little list of resources related to FNF, mostly modding related resources as of now. In these little weekly digests of Funkin blogposts, at the end I will include all the changes from the week, which is done automatically!!&lt;&#x2F;p&gt;
+&lt;p&gt;It runs off a Github action that was created by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;aurel3000&quot;&gt;Aurel3000&lt;&#x2F;a&gt; on Github, after he saw my post in the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;FunkinCrew&#x2F;funkinBounties&quot;&gt;funkinBounties&lt;&#x2F;a&gt; github page! Paid him a cool 50$ for it! &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;summary-of-last-week-s-funkin-resources-additions&quot;&gt;Summary of last week&#x27;s funkin-resources additions!&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;by github-actions[bot]&lt;&#x2F;em&gt; &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;api.github.com&#x2F;repos&#x2F;FunkinCrew&#x2F;funkin-resources&#x2F;pulls&#x2F;76&quot;&gt;PR FunkinCrew&#x2F;funkin-resources#76, &amp;quot;Add Sparrow Atlas Resizer &amp;amp; Funkin Rewritten&amp;quot; by GuglioIsStupid&lt;&#x2F;a&gt; merged at 2023-02-02T17:48:46Z, added:
+&lt;ul&gt;
+&lt;li&gt;1 line:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;KadeDev&#x2F;SparrowAtlasResizer&quot;&gt;Sparrow Atlas Resizer&lt;&#x2F;a&gt; - Simple program for resizing sparrow atlas png &amp;amp; xml&#x27;s&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;1 line:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;HTV04&#x2F;funkin-rewritten&quot;&gt;Funkin&#x27; Rewritten&lt;&#x2F;a&gt; - A rewrite of FNF in lua that is very focused on optimization. Can also compile for Nintendo Switch homebrew&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;api.github.com&#x2F;repos&#x2F;FunkinCrew&#x2F;funkin-resources&#x2F;pulls&#x2F;73&quot;&gt;PR FunkinCrew&#x2F;funkin-resources#73, &amp;quot;free-softare to free-software + Modding+&amp;quot; by SmeckoGeck46&lt;&#x2F;a&gt; merged at 2023-02-02T17:48:16Z, added:
+&lt;ul&gt;
+&lt;li&gt;2 lines:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;FunkinModdingPlus&#x2F;ModdingPlus&quot;&gt;Modding+&lt;&#x2F;a&gt; - An engine with HScript support with the intention of easy customization and enhanced gameplay options.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;AFunkinDisappointment&#x2F;DisappointingPlus&quot;&gt;Disappointing Plus&lt;&#x2F;a&gt; - A fork of Modding+ with additional features such as framerate adjustment, camera movement whenever a character sings, and an improved character swap function.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;api.github.com&#x2F;repos&#x2F;FunkinCrew&#x2F;funkin-resources&#x2F;pulls&#x2F;64&quot;&gt;PR FunkinCrew&#x2F;funkin-resources#64, &amp;quot;Add an online Spritesheet Maker animation tool.&amp;quot; by EyeDaleHim&lt;&#x2F;a&gt; merged at 2023-01-29T22:44:49Z, added:
+&lt;ul&gt;
+&lt;li&gt;1 line:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.leshylabs.com&#x2F;apps&#x2F;sstool&#x2F;&quot;&gt;Free Online Spritesheet Maker&lt;&#x2F;a&gt; - Combines multiple images together into a spritesheet, an alternative to Free Texture Packer. Make sure to select &lt;code&gt;XML&lt;&#x2F;code&gt; as the output format.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;closing-thoughts&quot;&gt;Closing thoughts&lt;&#x2F;h1&gt;
+&lt;p&gt;the site seems like it&#x27;s finally starting to come together, and working on it I feel got me into the habit of... WORKING on PROGRAMMING type things more... for the past while it&#x27;s really felt administrative heavy and biz bullshit! they were gonna introduce themselves, but this week was also the first official week of working with our new producer project manager person on the team! it&#x27;s lookin pretty good so far, even if it&#x27;s just someone to help answer and get back to emails lol&lt;&#x2F;p&gt;
+&lt;p&gt;SONG OF THA WEEK: &lt;div &gt;
+    &lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube-nocookie.com&#x2F;embed&#x2F;nxEKH7-d5dI&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>WEEK OF 2023&#x2F;01&#x2F;27: THE SECOND BLOG POST LOL!</title>
+		<published>2023-01-27T00:00:00+00:00</published>
+		<updated>2023-01-27T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://funkincrew.github.io/funkBlog/blog/2023-01-27/" type="text/html"/>
+		<id>https://funkincrew.github.io/funkBlog/blog/2023-01-27/</id>
+		<content type="html">&lt;p&gt;right now these are manually created by me...but eventually... they will be automated too hahahah!!!&lt;&#x2F;p&gt;
+&lt;p&gt;I gotta fix somethin up with github actions and payments, we have a crazy automated system with FNF, but since it&#x27;s on a private branch, we only have a certain amount of MINUTES we can use! I need to write something like a discord bot that can run 24&#x2F;7 and&#x2F;or doesn&#x27;t USE the as much Github minutes... in the FNF repo, there&#x27;s definitely room for improvement in terms of like... MINUTE optimization... lol&lt;&#x2F;p&gt;
+&lt;p&gt;anyways this week was a bit of a slow week with the BLOG DEVELOPMENTS. It&#x27;s mostly me, ninjamuffin!! writing blogs this week! I&#x27;ll try to give people some insight on some things we been cookin up&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h1 id=&quot;funkin-resources&quot;&gt;FUNKIN RESOURCES&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;written by cam :3&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This week I started what is currently known as &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;FunkinCrew&#x2F;funkin-resources&quot;&gt;funkin-resources&lt;&#x2F;a&gt; on the FunkinCrew github. The TLDR is that it&#x27;s hopefully our little central place for people to add to and contribute neat little FNF related things. Modding tools, music tools, anything related to the game like that. Right now it&#x27;s very much focused around modding and whatnot, but I do wonder with some of the tech stuff we are cooking, if things might shift in a different way. If we make some crazy high score stuff, maybe there will be stuff like high score guides? IDK but I think it&#x27;s interesting to watch hehe..&lt;&#x2F;p&gt;
+&lt;p&gt;As mentioned in the repo, it&#x27;s inspired by the &amp;quot;Awesome&amp;quot; lists on Github. Personally whenever I&#x27;ve found myself interested in something, a coding language, topic, or interest, usually... there&#x27;s a pretty hefty &amp;quot;Awesome&amp;quot; list on Github! &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kgryte&#x2F;awesome-peer-to-peer&quot;&gt;peer to peer&lt;&#x2F;a&gt;? &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-unofficial&#x2F;awesome-rust&quot;&gt;the rust programming language&lt;&#x2F;a&gt;? &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;k4m4&#x2F;terminals-are-sexy#readme&quot;&gt;terminals&lt;&#x2F;a&gt;? If you spend any amount of time in the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sindresorhus&#x2F;awesome&quot;&gt;main github Awesome&lt;&#x2F;a&gt; list you&#x27;re likely to find a topic you&#x27;ve been curious about but maybe didn&#x27;t know where to start! It&#x27;s like if you asked someone, &amp;quot;hey, I want to learn X, but how do I start?&amp;quot; and they give you every damn website&#x2F;article that helped them personally and send you on your way. A nice little shortcut like that!&lt;&#x2F;p&gt;
+&lt;p&gt;In a broader view, it&#x27;s good to cultivate self sufficiency and fulfillment from self-teaching and learning with a community! And we can&#x27;t take credit for too much of that in terms of Friday Night Funkin&#x27;. There is a god damn SHIT TON of resources, guides, tutorials out there that have existed long before I even thought of something like this, and there&#x27;s already been many successful communities of people coming together to help each other! Discord server, people asking for help on twitter, watching tutorials with each other. So far it&#x27;s been pretty damn thriving! &lt;&#x2F;p&gt;
+&lt;p&gt;I think it can be just slightly one step beyond though. I like to hope with us being the official real mf devs, the tighter we get into those aspects of the game and COMMUNITY, all the more enriching it can possibly be, especially for outsiders who haven&#x27;t taken a look at much modding stuff yet. &lt;&#x2F;p&gt;
+&lt;p&gt;Ideally I&#x27;d like to cook up a bit of a section in each of these weekly blog posts. Maybe showing the past week&#x27;s worth of additions to the resources list so that people can keep an eye on just the fresh stuff (inspiration by &lt;a href=&quot;https:&#x2F;&#x2F;haxe.io&quot;&gt;haxe.io weekly roundups&lt;&#x2F;a&gt;). Or maybe each week there&#x27;s an addition that&#x27;s the &amp;quot;resource of the week&amp;quot; type deal! Could all be fun I think! And makes things play nicely together with this blog, and other aspects of our lil ventures or whateva heheh&lt;&#x2F;p&gt;
+&lt;p&gt;Anyways, you can check out funkin-resources on Github: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;FunkinCrew&#x2F;funkin-resources&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;FunkinCrew&#x2F;funkin-resources&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Eventually we also plan on it being directly on the website itself! Nice little homepage for all that heheh.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;ease-of-use-blogging&quot;&gt;Ease of use: Blogging&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;written by cam ninjamuffin99&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;One thing about quirky little blog stuff is sorta EASE OF USE. I want our blogging system to be as easy and intuitive to use as essentially posting small updates to twitter, and be accessible to anyone on the team internally to write nearly whatever they please.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s a hard job to get artists to write and format markdown files on some niche internal blogging software, hell, even getting someone to open up Google Docs can be fussy. The idea I have is to connect it to a Discord channel&#x2F;bot, and then &amp;quot;write&amp;quot; blog posts within discord. Everyone on the damn internet uses discord, and it&#x27;s available on mobile, PC, and even web. It would be trivially easy to whip up something small, and post it to the blog. Then anyone on the team has the ease of use and access to post to a blog.&lt;&#x2F;p&gt;
+&lt;p&gt;I do want to put more thought into this ease of use stuff. I DO want these blog posts to continue on as long as we can. We&#x27;ve been thinking about it for a while, and a few inspirations always come up. Factorio has an awesome dev log series &amp;quot;Factorio Friday Facts&amp;quot; and they really dive into the nitty gritty of their work. Another is the S&amp;amp;Box and Garry Newman&#x27;s blog. It&#x27;s definitely been done before, but the S&amp;amp;Box devlog is inspiration behind having just a bunch of &amp;quot;mini&amp;quot; blog posts within a larger post. Something as small as a tweet, within a blog post!&lt;&#x2F;p&gt;
+&lt;p&gt;Even now, the system is merely setup for Github issues, and I don&#x27;t have the Discord bot just yet, but already it feels pretty damn slick to write things that are on my mind, and post it to the Github issues and jot it all down.&lt;&#x2F;p&gt;
+&lt;p&gt;I like the idea of a Github bot because I sorta wanna refresh my skills with DEPLOYMENT bullshit. I rarely mess around with any of that stuff, and I find it very interesting!!&lt;&#x2F;p&gt;
+&lt;p&gt;I also think writing Discord bots are a nice cute way to practice coding in a new language, so I will be a freak... and program it in a language I&#x27;ve never used before! It&#x27;s good to expand ur brain bwah!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;small-kickstarter-update&quot;&gt;Small Kickstarter update&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;written by ninjamuffin99&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Small kickstarter update is that pins, and posters and whatnot should be HOPEFULLY beginning manufacturing sometime next week. Will be another 
+follow up blog about it sometime next week!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;closing-thoughts&quot;&gt;Closing thoughts&lt;&#x2F;h1&gt;
+&lt;p&gt;it&#x27;s been on and off in terms of game stuff biz stuff and cute lil side project biz. wrapping up dipshit tax prep, which the deadline is on the 31st!!! 
+unfortunately as we get a bit busier with game work, we have less time to write for this cute little blog but I hope that this week is still decent substantial heheh&lt;&#x2F;p&gt;
+&lt;p&gt;as mentioned earlier, we also ran out of github free minutes lol, by the time next blog comes out we&#x27;ll get new minutes... lol!&lt;&#x2F;p&gt;
+&lt;p&gt;SONG OF THA WEEK: &lt;&#x2F;p&gt;
+&lt;div &gt;
+    &lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube-nocookie.com&#x2F;embed&#x2F;mxkAbNKAYiM&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>WEEK OF 2023&#x2F;01&#x2F;23: FUNKIN BLOG STUFF WAHOO LOL!</title>
+		<published>2023-01-20T00:00:00+00:00</published>
+		<updated>2023-01-20T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://funkincrew.github.io/funkBlog/blog/2023-01-20/" type="text/html"/>
+		<id>https://funkincrew.github.io/funkBlog/blog/2023-01-20/</id>
+		<content type="html">&lt;p&gt;HELLO, this post is a test of a bit of like... the MASTER post system! &lt;&#x2F;p&gt;
+&lt;p&gt;Basically the idea is, at the end of the week... all the POSTS of the week will be tossed here, and come out all at once!!
+Yippee!!&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;This system uses a buncho fancy Github actions, which currently live in our private repo (for convienience, but I&#x27;ll toss em out into the world eventually heheheh.&lt;&#x2F;p&gt;
+&lt;p&gt;Anyways, if I have it setup right, once this post goes live... there should be a few nice little niblets of posts from FNF team about various things!!! yahoo!!!!!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;issue-extra-test-teehee&quot;&gt;Issue extra test teehee&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;by ninjamuffin99&lt;&#x2F;em&gt; &lt;&#x2F;p&gt;
+&lt;p&gt;this is a small test for the issue thingie... lol!&lt;&#x2F;p&gt;
+&lt;p&gt;ran into a little snafu... this blog post is a test for the queue system. when I close this issue, it should be sent to our private queue&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;heading&quot;&gt;HEADING&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;italics bruh&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;code&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;lines and lines
+&lt;&#x2F;span&gt;&lt;span&gt;and lines
+&lt;&#x2F;span&gt;&lt;span&gt;of code
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;what-is-bpm&quot;&gt;What is BPM?&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;written by PrincessMtH&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;a BPM is how many beats there are per minute.&lt;&#x2F;p&gt;
+&lt;p&gt;sounds straightforward, but, what is a &amp;quot;beat&amp;quot;? well in my lil DAW there&#x27;s 4 beats per bar, so it&#x27;s just a 4th of a bar, clearly. but not all music is written like that. sometimes there&#x27;s 3 beats per bar... we call that 3&#x2F;4. so the 3 in that means how many beats there are, and the 4 means... what does the 4 mean...? something to do with steps, surely?&lt;&#x2F;p&gt;
+&lt;p&gt;let me look this up... ah, so since it&#x27;s from music notation, the 4 in 3&#x2F;4 means that every bar (measure) lasts &lt;em&gt;three quarter&lt;&#x2F;em&gt; notes. so if it were 3&#x2F;8, that means that a measure would last &lt;em&gt;three eighth&lt;&#x2F;em&gt; notes. so that means the music is twice as fast, right? well, the music would still be notated the same, so not really... it would just be going way over the supposed length of a measure, i guess. but as for counting &amp;quot;beats&amp;quot;, i suppose functionally there&#x27;s not much difference in counting 3&#x2F;8 as 3&#x2F;4 at double BPM?&lt;&#x2F;p&gt;
+&lt;p&gt;wait, so if it has nothing to do with steps, what is a step??? that shit is used all over funkin, and there&#x27;s definitely reasons one might want to time stuff inbetween beats. are u telling me it has no basis in music notation. this is so awkward.... i guess we just have to arbitrarily decide how many steps the beats are divided into depending on what&#x27;s needed. this is going to get really funny with music in swing :)&lt;&#x2F;p&gt;
+&lt;p&gt;ok test post over, you can get back to your own business&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.newgrounds.com&#x2F;audio&#x2F;listen&#x2F;1179992&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;5209080&#x2F;213527062-a8165af5-2099-4542-8037-905e7926f887.gif&quot; alt=&quot;ezgif com-gif-maker(7)&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;here&#x27;s a little attached gif, you can click it to be taken to a little midi tune on newgrounds and add it to your faves&lt;&#x2F;p&gt;
+&lt;p&gt;~Signed Emma MtH i wrote this&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;inputs-scoring-and-more&quot;&gt;Inputs, Scoring, and MORE!&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;Written 2023&#x2F;01&#x2F;20 by EliteMasterEric&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;&#x2F;h1&gt;
+&lt;p&gt;Hey, it&#x27;s me, EliteMasterEric!! If you don&#x27;t know me, I&#x27;ve been helping out with a bunch of programming stuff for Funkin&#x27; for about a year now, and as of a few months ago I am a full-time got-damned EMPLOYEE! My work has mainly related to engine stuff so far, such as refactoring the game to work well with the new modding system I&#x27;ve been developing. I&#x27;ve also been working on a bunch of feature-related stuff along the way. Hopefully my musings can help pad out these weekly blog posts~&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;inputs&quot;&gt;Inputs&lt;&#x2F;h1&gt;
+&lt;p&gt;My current focus is refactoring the game&#x27;s input system. I&#x27;ve done a lot of research into how HaxeFlixel handles keyboard inputs, and I have a lot of solutions I can try to hopefully make the system feel great. However, all that work is for naught if the community doesn&#x27;t like it, so here&#x27;s the plan:&lt;&#x2F;p&gt;
+&lt;p&gt;First, I&#x27;ll create a barebones little program that lets you play the game as minimally as possible. This means no fancy visuals except for what&#x27;s necessary. Then, I&#x27;ll make a menu where you can select between several different input systems. Week 7 as a baseline, my new system, a really old one from like Ludem Dare era, and several that I&#x27;ll rip as directly as possible from the latest versions of a few of the most popular engines.&lt;&#x2F;p&gt;
+&lt;p&gt;Then, I&#x27;ll scramble them all up! Only I know which one is which, it&#x27;s a little blind study! We&#x27;ll release it with a nice Google survey for people to take, so I can know if the systems I add are actually making the game feel better to play. Expect to see that come out in the next week or two.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;scoring&quot;&gt;Scoring&lt;&#x2F;h1&gt;
+&lt;p&gt;On a similar note, I&#x27;ve also been thinking about how the game handles scoring, and I put out a little survey:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;uq-qxuPMPMw&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;4635334&#x2F;213643553-ba456249-7eab-4544-b8e8-bd9192a01485.png&quot; alt=&quot;A Twitter poll&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s pretty clear from this that the in-game scoring system is ignored by the vast majority of the playerbase. That&#x27;s fair, considering that many of them are rhythm game veterans and will only ever care about the accuracy percentage, but for a game with an arcade-like feel such as Friday Night Funkin&#x27;, it&#x27;s a problem that so few people are invested in high-scores, especially as we want the game to have proper leaderboards in the future.&lt;&#x2F;p&gt;
+&lt;p&gt;The fact that the scoring system was probably designed in 15 minutes during a Ludem Dare and never thought about until today is probably another big reason too, ehe :P&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve been doing a lot of RESEARCH into what different scoring systems do and how, and into the ways that scoring systems can make the game more nuanced, or even influence how our players behave. We&#x27;ll see how that information can help us make the scoring system more appealing to players.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;mod-stuff&quot;&gt;Mod Stuff&lt;&#x2F;h1&gt;
+&lt;p&gt;You may have seen this already, but a bit ago I was working on code tied to the mod loader. With some help from UncertainProd on GitHub, I was able to get the asset loading system working for ZIP mods, on desktop &lt;strong&gt;and web&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;4635334&#x2F;213643382-af7ddd75-2626-47fa-9f7b-9bddc49bdd19.mp4&lt;&#x2F;p&gt;
+&lt;p&gt;Boy that sure was a cool video, I sure am glad nothing caused the embed to break and thereby destroy the whole fucking website.&lt;&#x2F;p&gt;
+&lt;p&gt;No promises that this feature will necessarily show up in the next version, but it&#x27;s very promising functionality and great for people who are based and play the game on Newgrounds.com.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;wrap-up&quot;&gt;Wrap-Up&lt;&#x2F;h1&gt;
+&lt;p&gt;...and that should catch you all up on what I&#x27;m working on right now! I bet those haters who said the Kickstarter is a scam and we spent all the money on crack feel PREtty stupid right now. &lt;em&gt;sniff&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You can look out for more posts from me on this blog (the one you&#x27;re looking at right now), or &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;EliteMasterEric&quot;&gt;follow me on Twitter&lt;&#x2F;a&gt; where I post random shit sometimes.&lt;&#x2F;p&gt;
+&lt;p&gt;P.S. Look at this cat his name is Gilbert. He&#x27;s not my cat I just think he&#x27;s neat.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;2FloHUUCBKQ&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;4635334&#x2F;213643998-7e474af3-d149-4b75-8cda-0971b5a9c49d.png&quot; alt=&quot;Gilbert&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;state-of-funkin-biz-q1-2023&quot;&gt;state of funkin biz: Q1 2023&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;by ninjamuffin99&lt;&#x2F;em&gt; &lt;&#x2F;p&gt;
+&lt;p&gt;Past 6 months or so have been interesting. In many ways it&#x27;s felt like we&#x27;ve gone from chump ass crew of misfits, to a semi-professional game development team. Not to say that we&#x27;ve taken things any more or less seriously, but I think things have more STRUCTURE for ourselves than before.  This blog part will talk about buncho administrative bullshit that we balance on top of actual game development production work!!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;meeting-shenanigans&quot;&gt;Meeting shenanigans&lt;&#x2F;h2&gt;
+&lt;p&gt;Near the end of the summer of 2022, I feel like we started thinking about our PRODUCTION and HOW we worked a LOOOOT more. We had those floating thoughts before, sorta knowing that in some way or form we would have to &amp;quot;organize&amp;quot; ourselves more. First thing I think we did, was to organize WEEKLY MEETINGS. I know that may sound funny, but before then, we generally just all kept in touch with each other via messages, and work was somewhat okaaayyy.... It did end up leaving us with some miscommunications. Who was working on what? What was the progress of this thing? What did we all have planned in OUR heads? Having weekly meetings has kept us close to being on the same page since we&#x27;ve started them. Big biz people also do STANDUP meetings, which entail DAILY meetings, albeit, short 10-ish minute ones. Maybe that&#x27;s something to pursue furthur for ourselves, but generally so far we&#x27;ve done a decent job at updating each other on what progress we make each day in DMs. Keep in mind, we have a good damn handful of people in different timezones, meetings can be fussy to setup!&lt;&#x2F;p&gt;
+&lt;p&gt;Disclaimer: we do our MEETINGS with our CORE crew (me, kawaisprite, phantomarcade, and evilsk8r) and most&#x2F;all of our PROGRAMMING team. We haven&#x27;t done too many meetings with much of our other contractors, but that is also something we can probably take a peak into.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;payroll-shenanigans&quot;&gt;payroll shenanigans&lt;&#x2F;h2&gt;
+&lt;p&gt;As well as thinking about HOW we work more, we also have put more thought into HOW we get PAID. Through 2021 (Kickstarter&#x2F;week 7 release year) we didn&#x27;t touch ANY of the Kickstarter money. This was because we wanted to keep everything clean, and we didn&#x27;t have company yet, so we didn&#x27;t want to touch that money and deal with weirdo taxes!!!&lt;&#x2F;p&gt;
+&lt;p&gt;Through 2022 however is when we started dealing with paying not just ourselves, but contractors as well. We paid ourselves just in big lump sum for the year, partly due to some quirky tax stuff, and partly due to convenience (can be fussy to manually send wire transfers to ourselves). For our contractors, we paid them (and still pay them) with just paypal invoices usually. &lt;&#x2F;p&gt;
+&lt;p&gt;Towards the end of 2022, we ended up sorting out getting PAYROLL figured out. A nice automated system to pay ourselves regularly, and does all the fuss of withholding all the proper taxes and all that! You will be surprised at how much work goes into things like that, and how fussy things like that could be. We all set that up for our first OFFICIAL employee ERIC, so now we don&#x27;t need to send him quirky paypal invoices or anything like that, and he doesn&#x27;t need to deal with any more bullshit 1099 tax form nonsense. Now we just need to setup that stuff for OURSELVES, which gets a liiiiittle fussy... because I&#x27;m canadian lol! Outta the frying pan and into the fire! &lt;&#x2F;p&gt;
+&lt;h2 id=&quot;producer-person-shenanigans&quot;&gt;Producer person shenanigans&lt;&#x2F;h2&gt;
+&lt;p&gt;Through November&#x2F;December we generally came to realize that we feel like we not only wanted, but felt like we NEEDED someone to help me and PhantomArcade manage PRODUCTION of the game. We generally like to hope we both have decent instincts on workflow, and productivity, BUT we also both feel that making it someones dedicated JOB to focus on things like that (as well as deal with things for us like emails, paperwork, etc.) would be worthwhile. We&#x27;d have more time to actually work on the game, AND general productivity is enhanced by a professional who&#x27;s sole job is to help the game be as productive as possible. &lt;&#x2F;p&gt;
+&lt;p&gt;Through December we were hunting around a bit, and eventually found someone who was recommended to us. Late December we interviewed them, and then a week or so later we all shook hands, and now by end of January (in about 10 days or so), we will OFFICIALLY begin work with a PRODUCER &#x2F; PROJECT MANAGER on our crew. Just like how PhantomArcade is a professional at art and animation, and Kawaisprite is a professional with music and sounds, this person is pretty much a professional at project management. Something that goes very unsung in the biz! We have high hopes for working with them, and feel like it&#x27;s starting off the year pretty good! Very much looking forward to working with them! more info about them at a later date though probably once they start they can introduce themselves here heheh&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;taxes-shenanigans&quot;&gt;Taxes shenanigans&lt;&#x2F;h2&gt;
+&lt;p&gt;January 2023 is deadline for some tax stuff we need to do... so good ol&#x27; PhantomArcade has been grinding his way through that in the past few days, yeowch! Could really damn use extra hands ow ow ow!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;hiring-and-interview-shenanigans&quot;&gt;Hiring and Interview shenanigans&lt;&#x2F;h2&gt;
+&lt;p&gt;Back in October 2022, I put out one of our first open job application posts. It got a good chunk of damn good applicants!! It was my first personal experience in this position, and I was unsure what to expect. It was VERY hard to filter down people, and a MUCH bigger task than anticipated. Doing research on candidates, comparing them to each other, doing research on the answers they gave. Basically for the period of a few weeks I had to go from game developer to full time hiring manager.&lt;&#x2F;p&gt;
+&lt;p&gt;I slowly started getting in touch with some of the tasty candidates, INTERVIEWED THEM. It was a strange experience. Everyone I talked to was a delight to talk to, and I genuinely would want to work with everyone that I interviewed! I really do mean it when I say it was hard to nail down to just a single person. But I found a mfer! They been cookin since about middle of December and things have been a good experience I feel so far heheh&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2023-and-beyond&quot;&gt;2023 and beyond&lt;&#x2F;h2&gt;
+&lt;p&gt;As mentioned earlier, we&#x27;ve been looking forward to working with our fancy new producer person, but that&#x27;s just a small slice of work that we deal with! We still have not only a LOT of work on the game itself, but things around the BUSINESS! We will have our work cut out for us, but the light at the end of the tunnel gets brighter and brighter. It feels like we work much more productively, and week by week, we accelerate that productivity. Things get better and better for ourselves and our lives it feels. Here&#x27;s to Funkin 2023, and here&#x27;s to funkin&#x27; blog posting wahoo!!!!!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;C-com9M91-4&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;22229331&#x2F;213636577-8983e46c-fbf0-43e3-86e6-4797ae3ef59e.gif&quot; alt=&quot;nico&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Issue extra test teehee</title>
+		<published>2023-01-19T00:00:00+00:00</published>
+		<updated>2023-01-19T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://funkincrew.github.io/funkBlog/blog/issue-extra-test-teehee/" type="text/html"/>
+		<id>https://funkincrew.github.io/funkBlog/blog/issue-extra-test-teehee/</id>
+		<content type="html">&lt;p&gt;** written by ninjamuffin99**
+this is a small test for the issue thingie... lol!&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;ran into a little snafu... this blog post is a test for the queue system. when I close this issue, it should be sent to our private queue&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>what is BPM?</title>
+		<published>2023-01-19T00:00:00+00:00</published>
+		<updated>2023-01-19T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://funkincrew.github.io/funkBlog/blog/what-is-bpm/" type="text/html"/>
+		<id>https://funkincrew.github.io/funkBlog/blog/what-is-bpm/</id>
+		<content type="html">&lt;p&gt;** written by PrincessMtH**
+a BPM is how many beats there are per minute.&lt;&#x2F;p&gt;
+&lt;p&gt;sounds straightforward, but, what is a &amp;quot;beat&amp;quot;? well in my lil DAW there&#x27;s 4 beats per bar, so it&#x27;s just a 4th of a bar, clearly. but not all music is written like that. sometimes there&#x27;s 3 beats per bar... we call that 3&#x2F;4. so the 3 in that means how many beats there are, and the 4 means... what does the 4 mean...? something to do with steps, surely?&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;let me look this up... ah, so since it&#x27;s from music notation, the 4 in 3&#x2F;4 means that every bar (measure) lasts &lt;em&gt;three quarter&lt;&#x2F;em&gt; notes. so if it were 3&#x2F;8, that means that a measure would last &lt;em&gt;three eighth&lt;&#x2F;em&gt; notes. so that means the music is twice as fast, right? well, the music would still be notated the same, so not really... it would just be going way over the supposed length of a measure, i guess. but as for counting &amp;quot;beats&amp;quot;, i suppose functionally there&#x27;s not much difference in counting 3&#x2F;8 as 3&#x2F;4 at double BPM?&lt;&#x2F;p&gt;
+&lt;p&gt;wait, so if it has nothing to do with steps, what is a step??? that shit is used all over funkin, and there&#x27;s definitely reasons one might want to time stuff inbetween beats. are u telling me it has no basis in music notation. this is so awkward.... i guess we just have to arbitrarily decide how many steps the beats are divided into depending on what&#x27;s needed. this is going to get really funny with music in swing :)&lt;&#x2F;p&gt;
+&lt;p&gt;ok test post over, you can get back to your own business
+&lt;a href=&quot;https:&#x2F;&#x2F;www.newgrounds.com&#x2F;audio&#x2F;listen&#x2F;1179992&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;5209080&#x2F;213527062-a8165af5-2099-4542-8037-905e7926f887.gif&quot; alt=&quot;ezgif com-gif-maker(7)&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+here&#x27;s a little attached gif, you can click it to be taken to a little midi tune on newgrounds and add it to your faves&lt;&#x2F;p&gt;
+&lt;p&gt;~Signed Emma MtH i wrote this&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Github actions&#x2F;issues blog posting pt. 2</title>
+		<published>2023-01-18T00:00:00+00:00</published>
+		<updated>2023-01-18T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://funkincrew.github.io/funkBlog/blog/funny-blogh/" type="text/html"/>
+		<id>https://funkincrew.github.io/funkBlog/blog/funny-blogh/</id>
+		<content type="html">&lt;p&gt;Wahoo, another lil blog test thing!&lt;&#x2F;p&gt;
+&lt;p&gt;Today I&#x27;ve been getting back and sorta workin on workflow-ish stuff. Getting quirks figured out, and as of right now... you SHOULD be able to write blog posts and they should be automatically uploaded to the website!!! Building and everything!!&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Right now, the workflow is &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write github issue in our private little blog-queue repo&lt;&#x2F;li&gt;
+&lt;li&gt;Post Github issue, that issue will essentially act as the DRAFT&lt;&#x2F;li&gt;
+&lt;li&gt;Whenever it&#x27;s ready to post, just CLOSE the issue&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The next few little concepts I got in my brain is instead of having the blogs be posted whenever anyone pleases, once closed, it gets put into a queue of sorts. Then at the end of the week, all the blogs of the week will be posted in a bit of a mega weekly post! I feel like that&#x27;s a bit more fun than instant posting, heheh. It&#x27;s like taking a film photo, and waiting for it to develop!&lt;&#x2F;p&gt;
+&lt;p&gt;More things I want to figure out is getting like... the AUTHOR stuff sorted out as well!!! And then attatching it all to a discord bot!! &lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Github actions&#x2F;issues blog posting</title>
+		<published>2023-01-11T00:00:00+00:00</published>
+		<updated>2023-01-11T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://funkincrew.github.io/funkBlog/blog/blog-post-issues-test/" type="text/html"/>
+		<id>https://funkincrew.github.io/funkBlog/blog/blog-post-issues-test/</id>
+		<content type="html">&lt;p&gt;This is a test for blog post issues! In fact... I will write the whole idea of the WORKFLOW here.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;The idea right now is to sorta use Github issues as &amp;quot;drafts&amp;quot; of sorts for the blog posting. Github has a decent little markdown text editor, which would play pretty damn nicely with the static site generator!&lt;&#x2F;p&gt;
+&lt;p&gt;SO the idea is that issues can be used to write little blog posts, and then every Friday or so, all the issues that get &amp;quot;closed&amp;quot; by the OP by the end of the week will be included in a roundup of sorts! I prefer a weekly roundup than like... big stream of info? I think it&#x27;s refreshing to be able to expect something nice at the end of the week heheh&lt;&#x2F;p&gt;
+&lt;p&gt;The workflow will include a few cute little Github actions, one on our little &lt;code&gt;blog-queue&lt;&#x2F;code&gt; repo, which will just be a buncho issues really, I think the Github action I&#x27;ll put in the funkBlog repo, so that people have access to what that looks like :)&lt;&#x2F;p&gt;
+&lt;p&gt;For anyone reading this and wondering about similar implementation, just know that this other repo we have truly is just a buncho issues only! &lt;&#x2F;p&gt;
+&lt;p&gt;I want to get it setup this way, less so for GITHUB use, and moreso to have integration with a DISCORD bot. The next step is making a small discord bot, so that even dummies like PhantomArcade can write and post small little snippets and ideas for blog writeups!&lt;&#x2F;p&gt;
+&lt;p&gt;So far so good!&lt;&#x2F;p&gt;
+&lt;p&gt;Here are a few tests...&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;here-is-a-heading-of-sorts&quot;&gt;HERE IS A HEADING OF SORTS!&lt;&#x2F;h3&gt;
+&lt;p&gt;this should be &lt;strong&gt;BOLD&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;and this one is italic!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;fuck it, code&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>BLOG IN PROGRESS</title>
+		<published>2023-01-10T00:00:00+00:00</published>
+		<updated>2023-01-10T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://funkincrew.github.io/funkBlog/blog/blogpost/" type="text/html"/>
+		<id>https://funkincrew.github.io/funkBlog/blog/blogpost/</id>
+		<content type="html">&lt;p&gt;HELLO EVERYONE READING THIS!!!&lt;&#x2F;p&gt;
+&lt;p&gt;This is the first OFFICIAL blog post! If you are reading this the day it is published... it means you are a maniac and probably stalk me!&lt;&#x2F;p&gt;
+&lt;p&gt;This is a bit of a post to look back at, and I suppose to document the process of even MAKING this damn blog!
+Moreso for the people in the future looking back a billion blogposts and reading this, and see where this blog started!
+(or digging through my github to see an abandoned project, doh!)&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;ANYWAYS, we want to make lil bloggy stuff, twitter is annoying and i think we like to keep to ourselves a lot of the time. 
+We don&#x27;t like comments so don&#x27;t expect some mf forum or someshit around here. &lt;&#x2F;p&gt;
+&lt;p&gt;This is also a general revamp of the funkin website, since we are trying to be more legit and real and PRESENTABLE!!!&lt;&#x2F;p&gt;
+&lt;p&gt;Lil tech details... this blog is made with ZOLA STATIC SITE GENERATOR!!!&lt;&#x2F;p&gt;
+&lt;p&gt;I have been trying to chip away on this blog every day for at least 20mins-1hr, and it has been fun lil side adventure heheh.&lt;&#x2F;p&gt;
+&lt;p&gt;captains log donezo&lt;&#x2F;p&gt;
+&lt;p&gt;lov, cameron 💞💞💞&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
